@@ -234,6 +234,58 @@ nav.primary > ul li a {
 }
 
 </style>
+
+
+</head>
+<body onload="hideURLbar()">
+<div id="browser">
+    <div class="status">
+        <span class="fork-me">
+             <a href="https://github.com/slidfast/slidfast">fork me on github</a>
+        </span>
+        <span class="android">
+            <a href="android-slide-flip-rotate.html">Android users click here</a>
+        </span>
+    </div>
+    <nav class="primary">
+        <ul>
+            <li><a href="?8" onclick="slideTo('home-page')">Home</a></li>
+            <li><a href="#" onclick="slideTo('products-page')">Products</a></li>
+            <li><a href="#" onclick="slideTo('about-page')">About</a></li>
+            <li><a href="#" onclick="flip('contact-page')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="page-container">
+
+        <div id="front" class="normal">
+            <div id="home-page" class="page">
+                <h1>Home Page</h1>
+            </div>
+
+            <div id="products-page" class="page stage-right">
+                <h1>Products Page</h1>
+            </div>
+
+            <div id="about-page" class="page stage-left">
+                <h1>About Page</h1>
+            </div>
+        </div>
+        <div id="back" class="flipped">
+
+            <div id="contact-page" class="page">
+                <h1>Contact Page</h1>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+	app.initialize();
+</script>
 <script type="text/javascript">
 
 //demo1----------------------------slide/flip transition
@@ -464,52 +516,5 @@ function log(statement){
 
 
 </script>
-
-</head>
-<body onload="hideURLbar()">
-<div id="browser">
-    <div class="status">
-        <span class="fork-me">
-             <a href="https://github.com/slidfast/slidfast">fork me on github</a>
-        </span>
-        <span class="android">
-            <a href="android-slide-flip-rotate.html">Android users click here</a>
-        </span>
-    </div>
-    <nav class="primary">
-        <ul>
-            <li><a href="?8" onclick="slideTo('home-page')">Home</a></li>
-            <li><a href="#" onclick="slideTo('products-page')">Products</a></li>
-            <li><a href="#" onclick="slideTo('about-page')">About</a></li>
-            <li><a href="#" onclick="flip('contact-page')">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div id="page-container">
-
-        <div id="front" class="normal">
-            <div id="home-page" class="page">
-                <h1>Home Page</h1>
-            </div>
-
-            <div id="products-page" class="page stage-right">
-                <h1>Products Page</h1>
-            </div>
-
-            <div id="about-page" class="page stage-left">
-                <h1>About Page</h1>
-            </div>
-        </div>
-        <div id="back" class="flipped">
-
-            <div id="contact-page" class="page">
-                <h1>Contact Page</h1>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
 </body>
 </html>
