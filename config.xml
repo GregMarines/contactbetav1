@@ -6,10 +6,10 @@
         id        = "com.contactbetav1.coastalnetdesigns"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>Contact Beta V1</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        transitions
     </description>
 
     <author href="coastalnetdesigns.com" email="gregrm@gmail.com">
